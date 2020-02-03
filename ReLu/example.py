@@ -1,11 +1,9 @@
 import numpy as np
 from pynetrelu import *
-import matplotlib.pyplot as plt
 
 
 
 Net = Network5([20,50,30,20,2])
-sum_error = []
 
 
 for pov in range(1000):
@@ -18,7 +16,6 @@ for pov in range(1000):
     Net.trening(N0,VD,0.1)
     output = Net.status(5)
     print(output[0][0])
-    sum_error.append(output[0][1])
 
 for i in range(5):
     vvod = float(input())
@@ -26,6 +23,4 @@ for i in range(5):
     out = Net.think(N0)
     print(out[0][0])
 
-plt.plot(sum_error)
-plt.show()
 
