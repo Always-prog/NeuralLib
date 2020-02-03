@@ -14,7 +14,7 @@ to get out network write:
 out = <your network>.status(leyer number)# 1,2,3,4 or 5.
 
 example:
-
+<code>
 import numpy as np
 from pynetrelu import *
 
@@ -39,4 +39,5 @@ for i in range(5):
     N0 = np.full((20,2),vvod)
     out = Net.think(N0)
     print(out[0][0])
+</code>
 
